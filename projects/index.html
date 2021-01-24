@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>RPS Game</title>        
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissor</h1>
+    </header>
+    <div class="container">
+	    <div class="score-container">
+		    <span class="user">YOU</span>
+		    <span id="score"></span>
+		    <span class="com">GUZDA</span>
+	    </div>
+	    <div class="buttons">
+		    <button id="paper" class="bn" onclick="game(this.value)" value="paper"><i class="far fa-hand-paper"></i></button>
+		    <button id="rock" class="bn" onclick="game(this.value)" value="rock"><i class="far fa-hand-rock"></i></button>
+		    <button id="scissors" class="bn" onclick="game(this.value)" value="scissors"><i class="far fa-hand-scissors"></i></button>
+	   </div>
+	   <div id="challenge">
+	   	<div id="you">
+	   	    <div id="YourObject"></div>
+	   	    <div class="who">You</div>
+	   	</div>
+	   	<div id="result"><p id="who"><p></div>
+	   	<div id="com">
+	   	    <div id="ComObject"></div>
+	   	    <div class="who">Guzda</div>
+	   	</div>
+	</div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
